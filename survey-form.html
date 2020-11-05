@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Survey - COVID-19 Remote Work Experience</title>
+    <link rel="stylesheet" href="survey-form.css">
+  </head>
+  <body>
+    <main>
+      <!-- #1 Title -->
+      <h1 id="title">COVID-19 Remote Work Transition Survey</h1>
+      
+      <!-- #2 Short Description -->
+      <p id="description">Please tell us about your experience transitioning to full-time remote work due to COVID-19</p>
+      
+      <!-- #3 Form -->
+      <form action="#" id="survey-form">
+        
+        <div class="form-control input">
+          <!-- #10 Name label -->
+          <label for="name" id="name-label">Name</label>
+          <!-- #4 Name input -->
+          <!-- #11 Name placeholder-->
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-control input">
+          <!--#10 Email label -->
+          <label for="email" id="email-label">Email</label>
+          <!-- #5 Email input -->
+          <!-- #6 Email validation -->
+          <!-- #11 Email placeholder -->
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-control input">
+          <!-- #10 Number label -->
+          <label for="number" id="number-label">Employee ID</label>
+          <!-- #7 Number input -->
+          <!-- #8 Number validation -->
+          <!-- #9 Number range -->
+          <!-- #11 Number placeholder -->
+          <input type="number" id="number" min="0" max="99999" placeholder="Enter your Employee ID">
+        </div>
+        
+        <div class="form-control input">
+          <!-- #12 Select dropdown-->
+          <label for="department">Department</label>
+          <select name="department" id="dropdown">
+            <option value="">--Select your department--</option>
+            <option value="cs">Customer Support</option>
+            <option value="development">Development</option>
+            <option value="executive">Executive Team</option>
+            <option value="finance">Finance</option>
+            <option value="legal">Legal</option>
+            <option value="marketing">Marketing</option>
+            <option value="rd">Research and Development</option>
+            <option value="sales">Sales</option>
+            <option value="tech">Technical Support</option>
+          </select>
+        </div>
+        
+        <!-- #13 Radio buttons -->
+        <fieldset class="form-control multiple">
+          <legend>How satisfied are you with your experience working remotely?</legend>
+          
+          <div>
+            <input type="radio" id="very-satisfied" value="very-satisfied" name="satisfaction">
+            <label for="very-satisfied">Very Satisfied (80-100%)</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="somewhat-satisfied" value="somewhat-satisfied" name="satisfaction">
+            <label for="somewhat-satisfied">Somewhat Satisfied (60-80%)</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="neither" value="neither" name="satisfaction">
+            <label for="neither">Neither Satisfied or Dissatisfied (40-60%)</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="somewhat-dissatisfied" value="somewhat-dissatisfied" name="satisfaction">
+            <label for="somewhat-dissatisfied">Somewhat Dissatisfied (20-40%)</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="very-dissatisfied" value="very-dissatisfied" name="satisfaction">
+            <label for="very-dissatisfied">Very Dissatisfied (0-20%)</label>
+          </div>
+        </fieldset>
+        
+        <fieldset class="form-control multiple">
+          <legend>Where do you prefer to work once things return to the "new normal"?</legend>
+          
+          <div>
+            <input type="radio" id="all-remote" value="all-remote" name="work">
+            <label for="all-remote">Entirely remote</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="mostly-remote" value="mostly-remote" name="work">
+            <label for="mostly-remote">Mostly remote, occasionally at the office</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="mostly-office" value="mostly-office" name="work">
+            <label for="mostly-office">Mostly at the office, occasionally remote</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="all-office" value="all-office" name="work">
+            <label for="all-office">Entirely at the office</label>
+          </div>
+        </fieldset>
+        
+        <!-- #14 Checkboxes -->
+        <fieldset class="form-control multiple">
+          <legend>What are your biggest pain points working remotely? <span>(Choose all that apply)</span></legend>
+          
+          <div>
+            <input type="checkbox" id="social" name="pain-points" value="social">
+            <label for="social">Lack of socialization with co-workers</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="equipment" name="pain-points" value="equipment">
+            <label for="equipment">Lack of adequate office equipment/setup</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="space" name="pain-points" value="space">
+            <label for="space">Lack of suitable workspace at home</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="distraction" name="pain-points" value="distraction">
+            <label for="distraction">Too many distractions (tv, family, pets, etc.)</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="balance" name="pain-points" value="balance">
+            <label for="balance">Difficulty separating work from home life</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="other" name="pain-points" value="other">
+            <label for="other">Other (provide examples in comments below)</label>
+          </div>
+        </fieldset>
+        
+        <!-- #15 Textarea -->
+        <div class="form-control comments">
+          <label for="comments">Please provide any additional comments/feedback about your remote work experience here. </label>
+          <textarea name="comments" id="comments" placeholder="Additional comments" cols="" rows=""></textarea>
+        </div>
+        
+        <!-- #16 Submit button -->
+        <button type="submit" id="submit">Submit</button>  
+      </form>
+    </main>
+  </body>
+</html>
